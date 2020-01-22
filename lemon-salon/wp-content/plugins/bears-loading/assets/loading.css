@@ -1,0 +1,73 @@
+body.loading #bt-main,body.loading  #page,body.loading .site{
+	opacity: 0;
+}
+.fakeloader{
+	position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: 999;
+	background:rgb(73, 151, 192);
+}  
+.fakeloader .fl img{
+   visibility: hidden;
+}
+#section-navigation {
+    position:relative;
+    margin-top:100px;
+}
+.btn-white {
+  font-family:'Lato';
+  font-weight:999;
+  min-width:100px;
+  background:transparent;
+  outline:none;
+  border:1px solid #000;
+  border-radius:22px;
+  padding:10px;
+  margin-right:10px;
+  margin-top:10px;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.btn-goback {
+  font-family:'Lato';
+  font-weight:999;
+  min-width:100px;
+  background:#eee;
+  color:#000;
+  outline:none;
+  border:none;
+  border-radius:22px;
+  padding:10px;
+  margin-right:10px;
+  margin-bottom:20px;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.btn-goback:hover {
+  opacity:.8;
+}
+.btn-white:hover { 
+  background:#000;
+  color:#fff;
+  outline:none;
+  border:1px solid #000;
+}
+.btn-active {
+  background:#000;
+  color:#fff;
+}
+@keyframes loadingFadein{from{opacity:0}
+to{opacity:1}
+}
+@-webkit-keyframes loadingFadein{from{opacity:0}
+to{opacity:1}
+}
