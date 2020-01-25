@@ -23,19 +23,6 @@
 	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 	<link rel="shortcut icon" href="favicon.ico">
 
-	<link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="<?php echo $url; ?>css/bootstrap/fonts/glyphicons-halflings-regular.eot">
-	<link rel="stylesheet" type="text/css" href="<?php echo $url; ?>css/fonts/ionicons/css/ionicons.min.css">
-	<link rel="stylesheet" type="text/css" href="<?php echo $url; ?>css/fonts/ionicons/fonts/ionicons28b5.eot">
-	<link rel="stylesheet" type="text/css" href="<?php echo $url; ?>css/fonts/ionicons/fonts/ionicons28b5.svg">
-	<link rel="stylesheet" type="text/css" href="<?php echo $url; ?>css/fonts/ionicons/fonts/ionicons28b5.ttf">
-	<link rel="stylesheet" type="text/css" href="<?php echo $url; ?>css/fonts/Montserrat/Montserrat-Bold.ttf">
-	<link rel="stylesheet" type="text/css" href="<?php echo $url; ?>css/fonts/Lato/Lato-Light.ttf">
-	<link rel="stylesheet" type="text/css" href="<?php echo $url; ?>css/fonts/Lato/Lato-Regular.ttf">
-	<link rel="stylesheet" type="text/css" href="<?php echo $url; ?>css/fonts/local-font.css">
-	<link rel="stylesheet" type="text/css" href="<?php echo $url; ?>css/fonts/Montserrat/Montserrat-Bold.ttf">
-	<link rel="stylesheet" type="text/css" href="<?php echo $url; ?>css/fonts/Poppins/Poppins-Bold.ttf">
-
 
 
 	<?php
@@ -51,47 +38,22 @@
 
 	?>
 
-	<!--=====================================
-	PLUGINS DE CSS
-	======================================-->
-
-	<!-- Animate.css -->
-
-	<link rel="stylesheet" type="text/css" href="<?php echo $url; ?>css/css/lemonspa.css">
-	<link rel="stylesheet" type="text/css" href="<?php echo $url; ?>css/css/animate.css">
-	<link rel="stylesheet" type="text/css" href="<?php echo $url; ?>css/bootstrap/css/bootstrap.css">
-	<link rel="stylesheet" type="text/css" href="<?php echo $url; ?>css/lightGallery/css/lightgallery.min.css">
-	<link rel="stylesheet" type="text/css" href="<?php echo $url; ?>css/sweetalert/dist/sweetalert.css">
-	<link rel="stylesheet" type="text/css" href="<?php echo $url; ?>css/sweetalert/dist/sweetalert.css">
-	<link rel="stylesheet" type="text/css" href="<?php echo $url; ?>css/twentytwenty-master/twentytwenty.css">		
-
-	<!--=====================================
-	PLUGINS DE JAVASCRIPT
-	======================================-->
-	<!-- jQuery -->
-	<script src="<?php echo $url; ?>vistas/js/jquery.min.js"></script>
-
-	<script  src="<?php echo $url; ?>css/bootstrap/js/bootstrap.js"></script>
-	<script  src="<?php echo $url; ?>css/jquery-countdown/jquery.countdown.min.js"></script>
-	<script  src="<?php echo $url; ?>css/jquery-countdown/jquery.plugin.min.js"></script>
-	<script  src="<?php echo $url; ?>css/js/froogaloop2.min.js"></script>
-	<script  src="<?php echo $url; ?>css/js/jquery.counterup.min.js"></script>
-	<script  src="<?php echo $url; ?>css/js/jquery.mousewheel.min.js">	</script>
-	<script  src="<?php echo $url; ?>css/js/jquery.stellar.min.js"></script>
-	<script  src="<?php echo $url; ?>css/js/jquery.waypoints.js"></script>
-	<script  src="<?php echo $url; ?>css/js/lazysizes.min.js"></script>
-	<script  src="<?php echo $url; ?>css/js/pp.js"></script>
-	<script  src="<?php echo $url; ?>css/js/progressbar.min.js"></script>
-	<script  src="<?php echo $url; ?>css/js/table-of-content.js"></script>
-	<script  src="<?php echo $url; ?>css/js/theme-script.js"></script>
-	<script  src="<?php echo $url; ?>css/js/tilt.jquery.min.js"></script>
-	<script  src="<?php echo $url; ?>css/lightGallery/js/lg-autoplay.min.js"></script>
-	<script  src="<?php echo $url; ?>css/lightGallery/js/lg-thumbnail.min.js"></script>
-	<script  src="<?php echo $url; ?>css/lightGallery/js/lg-video.min.js"></script>
-	<script  src="<?php echo $url; ?>css/lightGallery/js/lg-zoom.min.js"></script>
-	<script  src="<?php echo $url; ?>css/sweetalert/dist/sweetalert.min.js"></script>		
-	<script  src="<?php echo $url; ?>css/twentytwenty-master/jquery.event.move.js"></script>
-	<script  src="<?php echo $url; ?>css/twentytwenty-master/jquery.twentytwenty.js"></script>
+	<link rel="stylesheet" href="<?php echo $url; ?>vistas/css/animate.css">
+	<link rel="stylesheet" href="<?php echo $url; ?>vistas/css/bootstrap-datepicker.min.css">
+	<link rel="stylesheet" href="<?php echo $url; ?>vistas/css/bootstrap.css">
+	<link rel="stylesheet" href="<?php echo $url; ?>vistas/css/bootstrap.css.map">
+	<link rel="stylesheet" href="<?php echo $url; ?>vistas/css/default-assets/classy-nav.css">	
+	<link rel="stylesheet" href="<?php echo $url; ?>vistas/css/flexslider.css">
+	<link rel="stylesheet" href="<?php echo $url; ?>vistas/css/font-awesome.min.css">
+	<link rel="stylesheet" href="<?php echo $url; ?>vistas/css/icomoon.css">
+	<link rel="stylesheet" href="<?php echo $url; ?>vistas/css/jquery-ui.min.css">
+	<link rel="stylesheet" href="<?php echo $url; ?>vistas/css/jquery-ui.min.css">	
+	<link rel="stylesheet" href="<?php echo $url; ?>vistas/css/magnific-popup.css">
+	<link rel="stylesheet" href="<?php echo $url; ?>vistas/css/nice-select.css">
+	<link rel="stylesheet" href="<?php echo $url; ?>vistas/css/owl.carousel.min.css">
+	<link rel="stylesheet" href="<?php echo $url; ?>vistas/css/owl.theme.default.min.css">
+	<link rel="stylesheet" href="<?php echo $url; ?>vistas/style.css">
+	<link rel="stylesheet" href="<?php echo $url; ?>vistas/gulpfile.js">
 
 </head>
 
@@ -123,7 +85,7 @@ if(isset($_GET["ruta"])){
 	LISTA BLANCA DE URL'S AMIGABLES
 	=============================================*/
 
-	if($rutas[0] == "index" || $rutas[0] == "trabajos" || $rutas[0] == "nosotros" || $rutas[0] == "contacto" || $rutas[0] == "servicios" || $rutas[0] == "blog"){
+	if($rutas[0] == "index" || $rutas[0] == "blog" || $rutas[0] == "single-blog" || $rutas[0] == "contacto" || $rutas[0] == "nosotros" || $rutas[0] == "servicios"){
 
 		include "modulos/".$rutas[0].".php";
 
@@ -135,7 +97,7 @@ if(isset($_GET["ruta"])){
 
 }else{
 	include "modulos/inicio.php";
-
+	include "modulos/footer.php";
 }
 
 ?>
@@ -147,17 +109,17 @@ BOTON FLOTANTE
 <script type="text/javascript" style="">
     (function () {
         var options = {
-            facebook: "107694017316744", // Facebook page ID
-            whatsapp: "+52 1 55 10 06 54 21", // WhatsApp number
+            facebook: "1959701580752883", // Facebook page ID
+            whatsapp: "+52 1 55 44 32 01 16", // WhatsApp number
             email: "adiazm@eago.com.mx", // Email
-            sms: "5510065421", // Sms phone number
-            call: "5510065421", // Call phone number
-            company_logo_url: "http://localhost/eago-pag/images/logo-light.png", // URL of company logo (png, jpg, gif)
+            sms: "5544320116", // Sms phone number
+            call: "5544320116", // Call phone number
+            company_logo_url: "", // URL of company logo (png, jpg, gif)
             greeting_message: "", // Text of greeting message
             call_to_action: "Cotiza ahora", // Call to action
             wa_vb_message: "", // Message for WhatsApp
-            button_color: "#00B0B6", // Color of button
-            position: "right", // Position may be 'right' or 'left'
+            button_color: "#097A88", // Color of button
+            position: "left", // Position may be 'right' or 'left'
             order: "facebook,whatsapp,email,sms,call" // Order of buttons
         };
         var proto = document.location.protocol, host = "whatshelp.io", url = proto + "//static." + host;
@@ -175,10 +137,16 @@ BOTON FLOTANTE
 JAVASCRIPT PERSONALIZADO
 ======================================-->
 
-<!--=====================================
-https://developers.facebook.com/
-======================================-->
 
+    <script src="<?php echo $url; ?>vistas/js/jquery.min.js"></script>
+    <!-- Popper -->
+    <script src="<?php echo $url; ?>vistas/js/popper.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="<?php echo $url; ?>vistas/js/bootstrap.min.js"></script>
+    <!-- All Plugins -->
+    <script src="<?php echo $url; ?>vistas/js/roberto.bundle.js"></script>
+    <!-- Active -->
+    <script src="<?php echo $url; ?>vistas/js/default-assets/active.js"></script>
 
 
 </body>
