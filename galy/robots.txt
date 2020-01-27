@@ -1,0 +1,4 @@
+User-Agent: * 
+Disallow: /wp- 
+Allow: /wp-content/uploads/ 
+Sitemap: http://salongalyspa.com.mx/sitemap.xml

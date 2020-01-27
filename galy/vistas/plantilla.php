@@ -7,18 +7,14 @@
 	<title>Salon Galy Spa</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="" />
-	<meta name="keywords" content="" />
+	<meta name="keywords" content="salon de belleza, Tratamientos Faciales, Masajes, Tratamientos Corporales, Manicura y Pedicura, Salon de belleza, salon , galy , galy spa" />
 	<meta name="author" content="" />
   <!-- Facebook and Twitter integration -->
-	<meta property="og:title" content=""/>
+	<meta property="og:title" content="salon de belleza | Tratamientos Faciales | Masajes | Tratamientos Corporales | Manicura y Pedicura | Salon de belleza"/>
 	<meta property="og:image" content=""/>
 	<meta property="og:url" content=""/>
 	<meta property="og:site_name" content=""/>
 	<meta property="og:description" content=""/>
-	<meta name="twitter:title" content="" />
-	<meta name="twitter:image" content="" />
-	<meta name="twitter:url" content="" />
-	<meta name="twitter:card" content="" />
 
 	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 	<link rel="shortcut icon" href="favicon.ico">
@@ -88,8 +84,14 @@ if(isset($_GET["ruta"])){
 	if($rutas[0] == "index" || $rutas[0] == "blog" || $rutas[0] == "single-blog" || $rutas[0] == "contacto" || $rutas[0] == "nosotros" || $rutas[0] == "servicios"){
 
 		include "modulos/".$rutas[0].".php";
+	}
 
-	}else{
+
+	elseif ($rutas[0] == "Tratamientos-Faciales" || $rutas[0] == "Tratamientos-Corporales" || $rutas[0] == "Salon-belleza" || $rutas[0] == "Masajes" || $rutas[0] == "Manicura-Pedicura") {
+		include "modulos/servicios/".$rutas[0].".php";
+	}
+
+	else{
 
 		include "modulos/error404.php";
 
@@ -97,9 +99,8 @@ if(isset($_GET["ruta"])){
 
 }else{
 	include "modulos/inicio.php";
-	include "modulos/footer.php";
 }
-
+	include "modulos/footer.php";
 ?>
 
 <!--=====================================
@@ -111,7 +112,7 @@ BOTON FLOTANTE
         var options = {
             facebook: "1959701580752883", // Facebook page ID
             whatsapp: "+52 1 55 44 32 01 16", // WhatsApp number
-            email: "adiazm@eago.com.mx", // Email
+            email: "salongalyspa@gmail.com", // Email
             sms: "5544320116", // Sms phone number
             call: "5544320116", // Call phone number
             company_logo_url: "", // URL of company logo (png, jpg, gif)

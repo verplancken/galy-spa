@@ -12,7 +12,7 @@
                                 <div class="welcome-text text-center">
                                     <h6 data-animation="fadeInLeft" data-delay="200ms"></h6>
                                     <h2 data-animation="fadeInLeft" data-delay="500ms">Tratamientos Faciales</h2>
-                                    <a href="#" class="btn roberto-btn btn-2" data-animation="fadeInLeft" data-delay="800ms">Ver más</a>
+                                    <a href="Tratamientos-Faciales" class="btn roberto-btn btn-2" data-animation="fadeInLeft" data-delay="800ms">Ver más</a>
                                 </div>
                             </div>
                         </div>
@@ -31,7 +31,7 @@
                                 <div class="welcome-text text-center">
                                     <h6 data-animation="fadeInUp" data-delay="200ms"></h6>
                                     <h2 data-animation="fadeInUp" data-delay="500ms">Masajes</h2>
-                                    <a href="#" class="btn roberto-btn btn-2" data-animation="fadeInUp" data-delay="800ms">Ver más</a>
+                                    <a href="Masajes" class="btn roberto-btn btn-2" data-animation="fadeInUp" data-delay="800ms">Ver más</a>
                                 </div>
                             </div>
                         </div>
@@ -50,7 +50,7 @@
                                 <div class="welcome-text text-center">
                                     <h6 data-animation="fadeInDown" data-delay="200ms"></h6>
                                     <h2 data-animation="fadeInDown" data-delay="500ms">Tratamientos Corporales</h2>
-                                    <a href="#" class="btn roberto-btn btn-2" data-animation="fadeInDown" data-delay="800ms">Ver más</a>
+                                    <a href="Tratamientos-Corporales" class="btn roberto-btn btn-2" data-animation="fadeInDown" data-delay="800ms">Ver más</a>
                                 </div>
                             </div>
                         </div>
@@ -68,7 +68,7 @@
                                 <div class="welcome-text text-center">
                                     <h6 data-animation="fadeInDown" data-delay="200ms"></h6>
                                     <h2 data-animation="fadeInDown" data-delay="500ms">Salon de Belleza</h2>
-                                    <a href="#" class="btn roberto-btn btn-2" data-animation="fadeInDown" data-delay="800ms">Ver más</a>
+                                    <a href="Salon-belleza" class="btn roberto-btn btn-2" data-animation="fadeInDown" data-delay="800ms">Ver más</a>
                                 </div>
                             </div>
                         </div>
@@ -215,51 +215,6 @@
     </section>
     <!-- About Us Area End -->
 
-
-    <!-- Our Room Area Start -->
-    <section class="roberto-rooms-area">
-        <div class="rooms-slides owl-carousel">
-            <!-- Single Room Slide -->
-            <div class="single-room-slide d-flex align-items-center">
-                <!-- Thumbnail -->
-                <div class="room-thumbnail h-100 bg-img" style="background-image: url(<?php echo $url; ?>vistas/img/bg-img/16.jpg);"></div>
-
-                <!-- Content -->
-                <div class="room-content">
-                    <h2 data-animation="fadeInUp" data-delay="50ms">Premium King Room</h2>
-                    <h3 data-animation="fadeInUp" data-delay="100ms">400$ <span>/ Day</span></h3>
-                    <ul class="room-feature" data-animation="fadeInUp" data-delay="50ms">
-                        <li><span><i class="fa fa-check"></i> Size</span> <span>: 30 ft</span></li>
-                        <li><span><i class="fa fa-check"></i> Capacity</span> <span>: Max persion 5</span></li>
-                        <li><span><i class="fa fa-check"></i> Bed</span> <span>: King Beds</span></li>
-                        <li><span><i class="fa fa-check"></i> Services</span> <span>: Wifi, Television, Bathroom</span></li>
-                    </ul>
-                    <a href="#" class="btn roberto-btn mt-30" data-animation="fadeInUp" data-delay="700ms">View Details</a>
-                </div>
-            </div>
-
-            <!-- Single Room Slide -->
-            <div class="single-room-slide d-flex align-items-center">
-                <!-- Thumbnail -->
-                <div class="room-thumbnail h-100 bg-img" style="background-image: url(<?php echo $url; ?>vistas/img/bg-img/17.jpg);"></div>
-
-                <!-- Content -->
-                <div class="room-content">
-                    <h2 data-animation="fadeInUp" data-delay="50ms">Best King Room</h2>
-                    <h3 data-animation="fadeInUp" data-delay="100ms">125$ <span>/ Day</span></h3>
-                    <ul class="room-feature" data-animation="fadeInUp" data-delay="50ms">
-                        <li><span><i class="fa fa-check"></i> Size</span> <span>: 30 ft</span></li>
-                        <li><span><i class="fa fa-check"></i> Capacity</span> <span>: Max persion 5</span></li>
-                        <li><span><i class="fa fa-check"></i> Bed</span> <span>: King Beds</span></li>
-                        <li><span><i class="fa fa-check"></i> Services</span> <span>: Wifi, Television, Bathroom</span></li>
-                    </ul>
-                    <a href="#" class="btn roberto-btn mt-30" data-animation="fadeInUp" data-delay="700ms">View Details</a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Our Room Area End -->
-
     <!-- Testimonials Area Start -->
 <!--    <section class="roberto-testimonials-area section-padding-100-0">
         <div class="container">
@@ -365,9 +320,9 @@
                     <div class="text">
                         <h6></h6>
                         <h5>Tratamientos Faciales</h5>
-                        <p>I focus a lot on helping the first time or inexperienced traveler head out prepared and confident...</p>
+                        <p>lorem ipsum</p>
                     </div>
-                    <a href="#" class="btn project-btn">Ver más<i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+                    <a href="Tratamientos-Faciales" class="btn project-btn">Ver más<i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
                 </div>
             </div>
 
@@ -385,9 +340,9 @@
                     <div class="text">
                         <h6></h6>
                         <h5>Masajes</h5>
-                        <p>I focus a lot on helping the first time or inexperienced traveler head out prepared and confident...</p>
+                        <p>lorem ipsum</p>
                     </div>
-                    <a href="#" class="btn project-btn">Ver más<i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+                    <a href="Masajes" class="btn project-btn">Ver más<i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
                 </div>
             </div>
 
@@ -405,9 +360,9 @@
                     <div class="text">
                         <h6></h6>
                         <h5>Salon de Belleza</h5>
-                        <p>I focus a lot on helping the first time or inexperienced traveler head out prepared and confident...</p>
+                        <p>lorem ipsum</p>
                     </div>
-                    <a href="#" class="btn project-btn">Ver más<i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+                    <a href="Salon-belleza" class="btn project-btn">Ver más<i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
                 </div>
             </div>
 
@@ -425,9 +380,29 @@
                     <div class="text">
                         <h6></h6>
                         <h5>Tratamientos Corporales</h5>
-                        <p>I focus a lot on helping the first time or inexperienced traveler head out prepared and confident...</p>
+                        <p>lorem ipsum</p>
                     </div>
-                    <a href="#" class="btn project-btn">Ver más<i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+                    <a href="Tratamientos-Corporales" class="btn project-btn">Ver más<i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+                </div>
+            </div>
+
+            <!-- Single Project Slide -->
+            <div class="single-project-slide bg-img" style="background-image: url(<?php echo $url; ?>vistas/img/HD/mani2.jpg);">
+                <!-- Project Text -->
+                <div class="project-content">
+                    <div class="text">
+                        <h6></h6>
+                        <h5>Manicura y Pedicura</h5>
+                    </div>
+                </div>
+                <!-- Hover Effects -->
+                <div class="hover-effects">
+                    <div class="text">
+                        <h6></h6>
+                        <h5>Manicura y Pedicura</h5>
+                        <p>lorem ipsum</p>
+                    </div>
+                    <a href="Manicura-Pedicura" class="btn project-btn">Ver más<i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
                 </div>
             </div>
         </div>

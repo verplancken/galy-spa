@@ -3,7 +3,7 @@
         <!-- Search Form -->
         <div class="search-form d-flex align-items-center">
             <div class="container">
-                <form action="index.html" method="get">
+                <form action="index.php" method="get">
                     <input type="search" name="search-form-input" id="searchFormInput" placeholder="Type your keyword ...">
                     <button type="submit"><i class="icon_search"></i></button>
                 </form>
@@ -26,7 +26,7 @@
                         <div class="top-header-content">
                             <!-- Top Social Area -->
                             <div class="top-social-area ml-auto">
-                                <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                <a href="https://www.facebook.com/pg/Galyspa/services/" target="blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
 <!--                                <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
                                 <a href="#"><i class="fa fa-tripadvisor" aria-hidden="true"></i></a>
                                 <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>-->
@@ -47,7 +47,7 @@
                     <nav class="classy-navbar justify-content-between" id="robertoNav">
 
                         <!-- Logo -->
-                        <a class="nav-brand" href="index.html"><img src="<?php echo $url; ?>vistas/img/core-img/logo-galy.png" alt=""></a>
+                        <a class="nav-brand" href="index.php"><img src="<?php echo $url; ?>vistas/img/core-img/logo-galy.png" alt=""></a>
 
                         <!-- Navbar Toggler -->
                         <div class="classy-navbar-toggler">
