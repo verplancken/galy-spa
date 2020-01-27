@@ -12,12 +12,12 @@
   <!-- Facebook and Twitter integration -->
 	<meta property="og:title" content="salon de belleza | Tratamientos Faciales | Masajes | Tratamientos Corporales | Manicura y Pedicura | Salon de belleza"/>
 	<meta property="og:image" content=""/>
-	<meta property="og:url" content=""/>
-	<meta property="og:site_name" content=""/>
+	<meta property="og:url" content="http://salongalyspa.com.mx/vistas/img/core-img/logo-galy.png"/>
+	<meta property="og:site_name" content="Salon Galy Spa<"/>
 	<meta property="og:description" content=""/>
 
 	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="shortcut icon" href="vistas/img/logo-galy.ico">
 
 
 
