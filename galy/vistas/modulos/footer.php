@@ -8,7 +8,7 @@
                     <div class="col-12 col-sm-6 col-lg-3">
                         <div class="single-footer-widget mb-80">
                             <!-- Footer Logo -->
-                            <a href="#" class="footer-logo"><img src="img/core-img/logo2.png" alt=""></a>
+                            <a href="#" class="footer-logo"><img class="thumbnail" src="<?php echo $url; ?>vistas/img/core-img/logo-galy.png" alt=""></a>
 
                             <h4>55 4432 0116</h4>
                             <span>salongalyspa@gmail.com</span>
@@ -17,24 +17,24 @@
                     </div>
 
                     <!-- Single Footer Widget Area -->
-                    <div class="col-12 col-sm-6 col-lg-3">
+<!--                    <div class="col-12 col-sm-6 col-lg-3">
                         <div class="single-footer-widget mb-80">
-                            <!-- Widget Title -->
+                            <!~~ Widget Title ~~>
                             <h5 class="widget-title">Noticias</h5>
 
-                            <!-- Single Blog Area -->
+                            <!~~ Single Blog Area ~~>
                             <div class="latest-blog-area">
                                 <a href="#" class="post-title">Freelance Design Tricks How</a>
                                 <span class="post-date"><i class="fa fa-clock-o" aria-hidden="true"></i> Jan 02, 2019</span>
                             </div>
 
-                            <!-- Single Blog Area -->
+                            <!~~ Single Blog Area ~~>
                             <div class="latest-blog-area">
                                 <a href="#" class="post-title">Free Advertising For Your Online</a>
                                 <span class="post-date"><i class="fa fa-clock-o" aria-hidden="true"></i> Jan 02, 2019</span>
                             </div>
                         </div>
-                    </div>
+                    </div>-->
 
                     <!-- Single Footer Widget Area -->
                     <div class="col-12 col-sm-4 col-lg-2">
@@ -83,10 +83,10 @@
                     <div class="col-12 col-md-4">
                         <!-- Social Info -->
                         <div class="social-info">
-                            <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                            <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                            <a href="https://www.facebook.com/pg/Galyspa/services/" target="blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+<!--                            <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
                             <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-                            <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>-->
                         </div>
                     </div>
                 </div>

@@ -1,10 +1,10 @@
-    <!-- Header Area Start -->
+     <!-- Header Area Start -->
     <header class="header-area">
         <!-- Search Form -->
         <div class="search-form d-flex align-items-center">
             <div class="container">
-                <form action="index.php" method="get">
-                    <input type="search" name="search-form-input" id="searchFormInput" placeholder="Type your keyword ...">
+                <form action="<?php echo $urlServidor; ?>buscar.php" method="get" name="busqueda">
+                    <input type="search" name="busqueda" id="searchFormInput" placeholder="Escribe lo que deseas buscar">
                     <button type="submit"><i class="icon_search"></i></button>
                 </form>
             </div>
@@ -96,7 +96,7 @@
 
                                 <!-- Book Now -->
                                 <div class="book-now-btn ml-3 ml-lg-5">
-                                    <a href="#">Iniciar Sesion<i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+                                    <a href="login">Iniciar Sesion<i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
                                 </div>
                             </div>
                             <!-- Nav End -->
@@ -107,3 +107,4 @@
         </div>
     </header>
     <!-- Header Area End -->
+    

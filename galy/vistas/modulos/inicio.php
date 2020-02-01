@@ -1,13 +1,14 @@
+
     <!-- Welcome Area Start -->
-    <section class="welcome-area">
+<!--    <section class="welcome-area">
         <div class="welcome-slides owl-carousel">
-            <!-- Single Welcome Slide -->
+            <!~~ Single Welcome Slide ~~>
             <div class="single-welcome-slide bg-img bg-overlay" style="background-image: url(<?php echo $url; ?>vistas/img/HD/facial.jpg);" data-img-url="<?php echo $url; ?>vistas/img/HD/facial.jpg">
-                <!-- Welcome Content -->
+                <!~~ Welcome Content ~~>
                 <div class="welcome-content h-100">
                     <div class="container h-100">
                         <div class="row h-100 align-items-center">
-                            <!-- Welcome Text -->
+                            <!~~ Welcome Text ~~>
                             <div class="col-12">
                                 <div class="welcome-text text-center">
                                     <h6 data-animation="fadeInLeft" data-delay="200ms"></h6>
@@ -20,13 +21,13 @@
                 </div>
             </div>
 
-            <!-- Single Welcome Slide -->
+            <!~~ Single Welcome Slide ~~>
             <div class="single-welcome-slide bg-img bg-overlay" style="background-image: url(<?php echo $url; ?>vistas/img/HD/masaje1.jpg);" data-img-url="<?php echo $url; ?>vistas/img/HD/masaje1.jpg">
-                <!-- Welcome Content -->
+                <!~~ Welcome Content ~~>
                 <div class="welcome-content h-100">
                     <div class="container h-100">
                         <div class="row h-100 align-items-center">
-                            <!-- Welcome Text -->
+                            <!~~ Welcome Text ~~>
                             <div class="col-12">
                                 <div class="welcome-text text-center">
                                     <h6 data-animation="fadeInUp" data-delay="200ms"></h6>
@@ -39,13 +40,13 @@
                 </div>
             </div>
 
-            <!-- Single Welcome Slide -->
+            <!~~ Single Welcome Slide ~~>
             <div class="single-welcome-slide bg-img bg-overlay" style="background-image: url(<?php echo $url; ?>vistas/img/HD/masaje2.jpg);" data-img-url="<?php echo $url; ?>vistas/img/HD/masaje2.jpg">
-                <!-- Welcome Content -->
+                <!~~ Welcome Content ~~>
                 <div class="welcome-content h-100">
                     <div class="container h-100">
                         <div class="row h-100 align-items-center">
-                            <!-- Welcome Text -->
+                            <!~~ Welcome Text ~~>
                             <div class="col-12">
                                 <div class="welcome-text text-center">
                                     <h6 data-animation="fadeInDown" data-delay="200ms"></h6>
@@ -59,11 +60,11 @@
             </div>
 
             <div class="single-welcome-slide bg-img bg-overlay" style="background-image: url(<?php echo $url; ?>vistas/img/HD/mujer-salon.jpg);" data-img-url="<?php echo $url; ?>vistas/img/HD/mujer-salon.jpg">
-                <!-- Welcome Content -->
+                <!~~ Welcome Content ~~>
                 <div class="welcome-content h-100">
                     <div class="container h-100">
                         <div class="row h-100 align-items-center">
-                            <!-- Welcome Text -->
+                            <!~~ Welcome Text ~~>
                             <div class="col-12">
                                 <div class="welcome-text text-center">
                                     <h6 data-animation="fadeInDown" data-delay="200ms"></h6>
@@ -76,7 +77,7 @@
                 </div>
             </div>            
         </div>
-    </section>
+    </section>-->
     <!-- Welcome Area End -->
 
     <!-- About Us Area Start -->
@@ -320,7 +321,7 @@
                     <div class="text">
                         <h6></h6>
                         <h5>Tratamientos Faciales</h5>
-                        <p>lorem ipsum</p>
+                        <p>Leer más</p>
                     </div>
                     <a href="Tratamientos-Faciales" class="btn project-btn">Ver más<i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
                 </div>
@@ -340,7 +341,7 @@
                     <div class="text">
                         <h6></h6>
                         <h5>Masajes</h5>
-                        <p>lorem ipsum</p>
+                        <p>Contactar</p>
                     </div>
                     <a href="Masajes" class="btn project-btn">Ver más<i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
                 </div>
@@ -360,7 +361,7 @@
                     <div class="text">
                         <h6></h6>
                         <h5>Salon de Belleza</h5>
-                        <p>lorem ipsum</p>
+                        <p>Agenda tu cita</p>
                     </div>
                     <a href="Salon-belleza" class="btn project-btn">Ver más<i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
                 </div>
@@ -380,7 +381,7 @@
                     <div class="text">
                         <h6></h6>
                         <h5>Tratamientos Corporales</h5>
-                        <p>lorem ipsum</p>
+                        <p>Leer más</p>
                     </div>
                     <a href="Tratamientos-Corporales" class="btn project-btn">Ver más<i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
                 </div>
@@ -400,7 +401,7 @@
                     <div class="text">
                         <h6></h6>
                         <h5>Manicura y Pedicura</h5>
-                        <p>lorem ipsum</p>
+                        <p>Contactar</p>
                     </div>
                     <a href="Manicura-Pedicura" class="btn project-btn">Ver más<i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
                 </div>
@@ -424,56 +425,70 @@
 
             <div class="row">
                 <!-- Single Post Area -->
+                <?php foreach($posts as $post): ?>
                 <div class="col-12 col-md-6 col-lg-4">
                     <div class="single-post-area mb-100 wow fadeInUp" data-wow-delay="300ms">
-                        <a href="#" class="post-thumbnail"><img src="<?php echo $url; ?>vistas/img/bg-img/2.jpg" alt=""></a>
+                       
+                        <a class="post-thumbnail" href="<?php echo $urlServidor; ?>single.php?id=<?php echo $post['id']; ?>">
+                            <img src="<?php echo $urlServidor; ?>imagenes/<?php echo $post['thumb']; ?>" alt="<?php echo $post['titulo'] ?>">
+                        </a>
                         <!-- Post Meta -->
                         <div class="post-meta">
-                            <a href="#" class="post-date">Jan 02, 2019</a>
+                            <a href="#" class="post-date"><?php echo fecha($post['fecha']); ?></a>
                             <a href="#" class="post-catagory"></a>
                         </div>
                         <!-- Post Title -->
-                        <a href="#" class="post-title">Learn How To Motivate Yourself</a>
-                        <p>How many free autoresponders have you tried? And how many emails did you get through using them?</p>
-                        <a href="index.html" class="btn continue-btn"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+                        <a class="post-title" href="single.php?id=<?php echo $post['id']; ?>"><?php echo $post['titulo'] ?></a>
+                        <p class="extracto"><?php echo $post['extracto'] ?></p>
+                        <a href="<?php echo $urlServidor; ?>single.php?id=<?php echo $post['id']; ?>" class="btn continue-btn">
+                            <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                        </a>
                     </div>
                 </div>
-
-                <!-- Single Post Area -->
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="single-post-area mb-100 wow fadeInUp" data-wow-delay="500ms">
-                        <a href="#" class="post-thumbnail"><img src="<?php echo $url; ?>vistas/img/bg-img/3.jpg" alt=""></a>
-                        <!-- Post Meta -->
-                        <div class="post-meta">
-                            <a href="#" class="post-date">Jan 02, 2019</a>
-                            <a href="#" class="post-catagory"></a>
-                        </div>
-                        <!-- Post Title -->
-                        <a href="#" class="post-title">What If Let You Run The Hubble</a>
-                        <p>My point here is that if you have no clue for the answers above you probably are not operating a followup.</p>
-                        <a href="index.html" class="btn continue-btn"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
-                    </div>
-                </div>
-
-                <!-- Single Post Area -->
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="single-post-area mb-100 wow fadeInUp" data-wow-delay="700ms">
-                        <a href="#" class="post-thumbnail"><img src="<?php echo $url; ?>vistas/img/bg-img/4.jpg" alt=""></a>
-                        <!-- Post Meta -->
-                        <div class="post-meta">
-                            <a href="#" class="post-date">Jan 02, 2019</a>
-                            <a href="#" class="post-catagory"></a>
-                        </div>
-                        <!-- Post Title -->
-                        <a href="#" class="post-title">Six Pack Abs The Big Picture</a>
-                        <p>Some good steps to take to ensure you are getting what you need out of a autoresponder include…</p>
-                        <a href="index.html" class="btn continue-btn"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
-                    </div>
-                </div>
+                <?php endforeach; ?>          
 
             </div>
+            <!-- Paginacion -->
+            <section class="paginacion">
+                <ul>
+                    <?php 
+                        # Establecemos el numero de paginas
+                        $numero_paginas = numero_paginas($blog_config['post_por_pagina'], $conexion);
+                    ?>
+                    <!-- Mostramos el boton para retroceder una pagina -->
+                    <?php if (pagina_actual() === 1): ?>
+                        <li class="disabled">&laquo;</li>
+                    <?php else: ?>
+                        <li><a href="index.php?p=<?php echo pagina_actual() - 1?>">&laquo;</a></li>
+                    <?php endif; ?>
+
+                    <!-- Creamos un elemento li por cada pagina que tengamos -->
+                    <?php for ($i = 1; $i <= $numero_paginas; $i++): ?>
+                        <!-- Agregamos la clase active en la pagina actual -->
+                        <?php if (pagina_actual() === $i): ?>
+                            <li class="active">
+                                <?php echo $i; ?>
+                            </li>
+                        <?php else: ?>
+                            <li>
+                                <a href="index.php?p=<?php echo $i?>"><?php echo $i; ?></a>
+                            </li>
+                        <?php endif; ?>
+                    <?php endfor; ?>
+
+                    <!-- Mostramos el boton para avanzar una pagina -->
+                    <?php if (pagina_actual() == $numero_paginas): ?>
+                        <li class="disabled">&raquo;</li>
+                    <?php else: ?>
+                        <li><a href="index.php?p=<?php echo pagina_actual() + 1; ?>">&raquo;</a></li>
+                    <?php endif; ?>
+                </ul>
+            </section>
+            <!-- Paginacion -->
         </div>
     </section>
+
+
     <!-- Blog Area End -->
 
     <!-- Call To Action Area Start -->
@@ -493,7 +508,7 @@
                 </div>
             </div>
         </div>
-    </section-->>
+    </section-->
     <!-- Call To Action Area End -->
 
     <!-- Partner Area Start -->

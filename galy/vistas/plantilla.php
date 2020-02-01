@@ -23,8 +23,9 @@
 
 	<?php
 
-		//echo '<link rel="icon" href="'.$servidor.$icono["icono"].'">';
 
+		//echo '<link rel="icon" href="'.$servidor.$icono["icono"].'">';
+		
 		/*=============================================
 		MANTENER LA RUTA FIJA DEL PROYECTO
 		=============================================*/
@@ -32,13 +33,22 @@
 		$url = Ruta::ctrRuta();
     	$urlServidor = Ruta::ctrRutaServidor();
 
+		require 'admin/config.php';
+		require 'functions.php';
+		$conexion = conexion($bd_config);
+		// Obtenemos los post
+		// 
+		$posts = obtener_post($blog_config['post_por_pagina'], $conexion);
+		$posts2 = obtener_post($blog_config2['post_por_pagina2'], $conexion);
+
+
 	?>
 
 	<link rel="stylesheet" href="<?php echo $url; ?>vistas/css/animate.css">
 	<link rel="stylesheet" href="<?php echo $url; ?>vistas/css/bootstrap-datepicker.min.css">
 	<link rel="stylesheet" href="<?php echo $url; ?>vistas/css/bootstrap.css">
 	<link rel="stylesheet" href="<?php echo $url; ?>vistas/css/bootstrap.css.map">
-	<link rel="stylesheet" href="<?php echo $url; ?>vistas/css/default-assets/classy-nav.css">	
+	<link rel="stylesheet" href="<?php echo $url; ?>vistas/css/default-assets/classy-nav.css">
 	<link rel="stylesheet" href="<?php echo $url; ?>vistas/css/flexslider.css">
 	<link rel="stylesheet" href="<?php echo $url; ?>vistas/css/font-awesome.min.css">
 	<link rel="stylesheet" href="<?php echo $url; ?>vistas/css/icomoon.css">
@@ -50,6 +60,10 @@
 	<link rel="stylesheet" href="<?php echo $url; ?>vistas/css/owl.theme.default.min.css">
 	<link rel="stylesheet" href="<?php echo $url; ?>vistas/style.css">
 	<link rel="stylesheet" href="<?php echo $url; ?>vistas/gulpfile.js">
+	<link rel="stylesheet" href="<?php echo $url; ?>vistas/css/paginacion.css">
+
+	<link rel="stylesheet" href="<?php echo $url; ?>vistas/css/main.css">	
+	<link rel="stylesheet" href="<?php echo $url; ?>vistas/css/util.css">
 
 </head>
 
@@ -62,7 +76,6 @@ CABEZOTE
 =============================================*/
 
 include "modulos/cabezote.php";
-
 /*=============================================
 CONTENIDO DINÁMICO
 =============================================*/
@@ -81,15 +94,17 @@ if(isset($_GET["ruta"])){
 	LISTA BLANCA DE URL'S AMIGABLES
 	=============================================*/
 
-	if($rutas[0] == "index" || $rutas[0] == "blog" || $rutas[0] == "single-blog" || $rutas[0] == "contacto" || $rutas[0] == "nosotros" || $rutas[0] == "servicios"){
+	if($rutas[0] == "index" || $rutas[0] == "blog" || $rutas[0] == "single-blog" || $rutas[0] == "contacto" || $rutas[0] == "nosotros" || $rutas[0] == "servicios" || $rutas[0] == "login"){
 
 		include "modulos/".$rutas[0].".php";
+
 	}
 
 
 	elseif ($rutas[0] == "Tratamientos-Faciales" || $rutas[0] == "Tratamientos-Corporales" || $rutas[0] == "Salon-belleza" || $rutas[0] == "Masajes" || $rutas[0] == "Manicura-Pedicura") {
 		include "modulos/servicios/".$rutas[0].".php";
 	}
+
 
 	else{
 
@@ -98,14 +113,18 @@ if(isset($_GET["ruta"])){
 	}
 
 }else{
+	include "modulos/slide.php";
 	include "modulos/inicio.php";
+
 }
 	include "modulos/footer.php";
 ?>
 
+
 <!--=====================================
 BOTON FLOTANTE
 ======================================-->
+
 
 <script type="text/javascript" style="">
     (function () {
@@ -130,6 +149,7 @@ BOTON FLOTANTE
     })();
 </script>
 
+
  <!--=================================
  back to top -->
 
@@ -148,6 +168,10 @@ JAVASCRIPT PERSONALIZADO
     <script src="<?php echo $url; ?>vistas/js/roberto.bundle.js"></script>
     <!-- Active -->
     <script src="<?php echo $url; ?>vistas/js/default-assets/active.js"></script>
+
+    <script src="<?php echo $url; ?>vistas/js/main.js"></script>
+
+    <script src="<?php echo $url; ?>vistas/js/map-custom.js"></script>
 
 
 </body>

@@ -18,7 +18,7 @@ class Ruta{
 
 	public function ctrRutaServidor(){
 
-		return "http://localhost/";
+		return "http://localhost/galy-spa/admin/";
 	
 	}
 
