@@ -24,8 +24,8 @@ $blog_config = array(
 );
 
 $blog_admin = array(
-	'usuario' => 'Galy',
-	'password' => '123'
+	'usuario' => 'Galyspa',
+	'password' => 'Codage2020'
 );
 
 ?>
