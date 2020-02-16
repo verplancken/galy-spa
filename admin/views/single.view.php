@@ -1,9 +1,13 @@
-<?php 
-
-define('estilos', 'http://localhost/galy-spa/galy/vistas/');
-define('link', 'http://localhost/galy-spa/galy/');
-
- ?>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="" />
+    <meta name="keywords" content="salon de belleza, Tratamientos Faciales, Masajes, Tratamientos Corporales, Manicura y Pedicura, Salon de belleza, salon , galy , galy spa" />
+    <meta name="author" content="" />
+  <!-- Facebook and Twitter integration -->
+    <meta property="og:title" content="salon de belleza | Tratamientos Faciales | Masajes | Tratamientos Corporales | Manicura y Pedicura | Salon de belleza"/>
+    <meta property="og:image" content=""/>
+    <meta property="og:url" content="http://salongalyspa.com.mx/vistas/img/core-img/logo-galy.png"/>
+    <meta property="og:site_name" content="Salon Galy Spa<"/>
+    <meta property="og:description" content=""/>
 
     <link rel="stylesheet" href="<?php echo estilos ?>css/animate.css">
     <link rel="stylesheet" href="<?php echo estilos ?>css/bootstrap-datepicker.min.css">
@@ -22,7 +26,15 @@ define('link', 'http://localhost/galy-spa/galy/');
     <link rel="stylesheet" href="<?php echo estilos ?>style.css">
     <link rel="stylesheet" href="<?php echo estilos ?>gulpfile.js">
     <link rel="stylesheet" href="<?php echo estilos ?>css/paginacion.css">
-
+  <!-- Load Facebook SDK for JavaScript -->
+  <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
      <!-- Header Area Start -->
     <header class="header-area">
         <!-- Search Form -->
@@ -160,6 +172,7 @@ define('link', 'http://localhost/galy-spa/galy/');
                 <div class="col-12 col-lg-8">
                     <!-- Post Thumbnail -->
                     <div class="post-thumbnail mb-50">
+                        <img src="../galy/vistas/img/core-img/logo-galy.png" alt=""  style="position: absolute;top:0%;width: 15%;opacity: 0.5">
                         <img src="../admin/imagenes/<?php echo $post['thumb']; ?>" alt="<?php echo $post['thumb'] ?>">
                     </div>
                     <!-- Blog Details Text -->
@@ -173,11 +186,11 @@ define('link', 'http://localhost/galy-spa/galy/');
                         <!-- Author Social Info -->
                         <div class="author-social-info d-flex align-items-center">
                             <p>Share:</p>
-                            <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                            <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                            <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
-                            <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                            <a href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+                              <!-- Your share button code -->
+                              <div class="fb-share-button" 
+                                data-href="https://www.your-domain.com/your-page.html" 
+                                data-layout="button_count">
+                              </div>
                         </div>
                     </div>
 
@@ -187,7 +200,7 @@ define('link', 'http://localhost/galy-spa/galy/');
                     <div class="roberto-sidebar-area pl-md-4">
 
                         <!-- Newsletter -->
-                        <div class="single-widget-area mb-100">
+<!--                        <div class="single-widget-area mb-100">
                             <div class="newsletter-form">
                                 <h5>Boletin informativo</h5>
                                 <p>Suscríbase a nuestro boletín de noticias y reciba nuevas actualizaciones.</p>
@@ -197,7 +210,7 @@ define('link', 'http://localhost/galy-spa/galy/');
                                     <button type="submit" class="btn roberto-btn w-100">Subscribirse</button>
                                 </form>
                             </div>
-                        </div>
+                        </div>-->
 
                         <!-- Recent Post -->
 <!--                        <div class="single-widget-area mb-100">

@@ -1,7 +1,8 @@
 <?php
 $title="Agregar Slide";
 /* Llamar la Cadena de Conexion*/ 
-include ("config/conexion.php");
+include ("admin/config.php");
+
 //Insert un nuevo producto
 $imagen_demo="demo.png";
 $insert=mysqli_query($con,"insert into slider (url_image, estado) values ('$imagen_demo','0')");

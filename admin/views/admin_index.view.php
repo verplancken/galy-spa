@@ -1,6 +1,6 @@
-<?php require '../views/estilos.php'; 
-define('ver', 'http://localhost/galy-spa/admin/');
-include ("../config/conexion.php");
+<?php 
+require '../views/estilos.php'; 
+//include ("../config/conexion.php");
 
 ?>
 

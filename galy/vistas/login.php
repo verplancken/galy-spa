@@ -1,5 +1,6 @@
 <?php session_start();
-require 'admin/config.php';
+
+require '../../admin/admin/config.php';
 require 'functions.php';
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {

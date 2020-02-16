@@ -63,6 +63,7 @@ function obtener_post($post_por_pagina, $conexion){
 	// Ademas le pedimos que nos cuente cuantas filas tenemos.
 	$sentencia = $conexion->prepare("SELECT SQL_CALC_FOUND_ROWS * FROM articulos LIMIT {$inicio}, {$post_por_pagina}");
 
+
 	$sentencia->execute();
 	return $sentencia->fetchAll();
 }

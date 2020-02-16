@@ -1,3 +1,4 @@
+<div itemscope itemtype="http://schema.org/Article">
      <!-- Header Area Start -->
     <header class="header-area">
         <!-- Search Form -->
@@ -86,6 +87,7 @@
                                         </ul>
                                     </li>-->
                                     <li><a href="blog">blog</a></li>
+                                    <li><a href="Instalaciones">Instalaciones</a></li>
                                     <li><a href="contacto">Contacto</a></li>
                                 </ul>
 
@@ -107,4 +109,4 @@
         </div>
     </header>
     <!-- Header Area End -->
-    
+</div>   

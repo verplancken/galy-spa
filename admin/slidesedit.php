@@ -2,7 +2,7 @@
 
 $title="Editar Slide";
 /* Llamar la Cadena de Conexion*/ 
-include ("config/conexion.php");
+include ("admin/config.php");
 //Insert un nuevo producto
 $imagen_demo="demo.png";
 $id_slide=intval($_GET['id']);

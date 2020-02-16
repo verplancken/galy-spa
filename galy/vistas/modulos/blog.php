@@ -32,6 +32,7 @@
                         <!-- Post Thumbnail -->
                         <div class="post-thumbnail">
                         <a href="<?php echo $urlServidor; ?>single.php?id=<?php echo $post['id']; ?>">
+                            <img src="<?php echo $url; ?>vistas/img/core-img/logo-galy.png" alt=""  style="position: absolute;top:0%;width: 15%;opacity: 0.5">
                             <img src="<?php echo $urlServidor; ?>imagenes/<?php echo $post['thumb']; ?>" alt="<?php echo $post['titulo'] ?>">
                         </a>
                         </div>
@@ -91,7 +92,7 @@
                     <div class="roberto-sidebar-area pl-md-4">
 
                         <!-- Newsletter -->
-                        <div class="single-widget-area mb-100">
+<!--                        <div class="single-widget-area mb-100">
                             <div class="newsletter-form">
                                 <h5>Boletin informativo</h5>
                                 <p>Suscríbase a nuestro boletín de noticias y reciba nuevas actualizaciones.</p>
@@ -101,7 +102,7 @@
                                     <button type="submit" class="btn roberto-btn w-100">Subscribirse</button>
                                 </form>
                             </div>
-                        </div>
+                        </div>-->
 
                         <!-- Recent Post -->
 <!--                        <div class="single-widget-area mb-100">

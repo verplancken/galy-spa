@@ -15,4 +15,3 @@ $plantilla = new ControladorPlantilla();
 $plantilla -> plantilla();
 
 
- 

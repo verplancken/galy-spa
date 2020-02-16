@@ -1,7 +1,7 @@
 <?php
 $title="Configuración de Slider";
 /* Llamar la Cadena de Conexion*/ 
-include ("config/conexion.php");
+include ("admin/config.php");
 $active="active";
 ?>
 <!DOCTYPE html>
@@ -41,7 +41,7 @@ $active="active";
 	  </div>
 
     </div> <!-- /container -->
-	<?php include("footer.php");?>
+	
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->

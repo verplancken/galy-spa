@@ -1,11 +1,15 @@
+    
     <?php
-        include ("config/conexion.php");
+        
         $sql_slider=mysqli_query($con,"select * from slider where estado=1 order by orden");
         $nums_slides=mysqli_num_rows($sql_slider);
-    ?>
+    ?>  
+
     <!-- Welcome Area Start -->
-    <section class="welcome-area">
+    <section class="welcome-area" >
+
         <div class="welcome-slides owl-carousel">
+                    
                     <?php
                         $active="active";
                         while ($rw_slider=mysqli_fetch_array($sql_slider)){

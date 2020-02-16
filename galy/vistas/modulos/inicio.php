@@ -1,142 +1,9 @@
-
-    <!-- Welcome Area Start -->
-<!--    <section class="welcome-area">
-        <div class="welcome-slides owl-carousel">
-            <!~~ Single Welcome Slide ~~>
-            <div class="single-welcome-slide bg-img bg-overlay" style="background-image: url(<?php echo $url; ?>vistas/img/HD/facial.jpg);" data-img-url="<?php echo $url; ?>vistas/img/HD/facial.jpg">
-                <!~~ Welcome Content ~~>
-                <div class="welcome-content h-100">
-                    <div class="container h-100">
-                        <div class="row h-100 align-items-center">
-                            <!~~ Welcome Text ~~>
-                            <div class="col-12">
-                                <div class="welcome-text text-center">
-                                    <h6 data-animation="fadeInLeft" data-delay="200ms"></h6>
-                                    <h2 data-animation="fadeInLeft" data-delay="500ms">Tratamientos Faciales</h2>
-                                    <a href="Tratamientos-Faciales" class="btn roberto-btn btn-2" data-animation="fadeInLeft" data-delay="800ms">Ver más</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!~~ Single Welcome Slide ~~>
-            <div class="single-welcome-slide bg-img bg-overlay" style="background-image: url(<?php echo $url; ?>vistas/img/HD/masaje1.jpg);" data-img-url="<?php echo $url; ?>vistas/img/HD/masaje1.jpg">
-                <!~~ Welcome Content ~~>
-                <div class="welcome-content h-100">
-                    <div class="container h-100">
-                        <div class="row h-100 align-items-center">
-                            <!~~ Welcome Text ~~>
-                            <div class="col-12">
-                                <div class="welcome-text text-center">
-                                    <h6 data-animation="fadeInUp" data-delay="200ms"></h6>
-                                    <h2 data-animation="fadeInUp" data-delay="500ms">Masajes</h2>
-                                    <a href="Masajes" class="btn roberto-btn btn-2" data-animation="fadeInUp" data-delay="800ms">Ver más</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!~~ Single Welcome Slide ~~>
-            <div class="single-welcome-slide bg-img bg-overlay" style="background-image: url(<?php echo $url; ?>vistas/img/HD/masaje2.jpg);" data-img-url="<?php echo $url; ?>vistas/img/HD/masaje2.jpg">
-                <!~~ Welcome Content ~~>
-                <div class="welcome-content h-100">
-                    <div class="container h-100">
-                        <div class="row h-100 align-items-center">
-                            <!~~ Welcome Text ~~>
-                            <div class="col-12">
-                                <div class="welcome-text text-center">
-                                    <h6 data-animation="fadeInDown" data-delay="200ms"></h6>
-                                    <h2 data-animation="fadeInDown" data-delay="500ms">Tratamientos Corporales</h2>
-                                    <a href="Tratamientos-Corporales" class="btn roberto-btn btn-2" data-animation="fadeInDown" data-delay="800ms">Ver más</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="single-welcome-slide bg-img bg-overlay" style="background-image: url(<?php echo $url; ?>vistas/img/HD/mujer-salon.jpg);" data-img-url="<?php echo $url; ?>vistas/img/HD/mujer-salon.jpg">
-                <!~~ Welcome Content ~~>
-                <div class="welcome-content h-100">
-                    <div class="container h-100">
-                        <div class="row h-100 align-items-center">
-                            <!~~ Welcome Text ~~>
-                            <div class="col-12">
-                                <div class="welcome-text text-center">
-                                    <h6 data-animation="fadeInDown" data-delay="200ms"></h6>
-                                    <h2 data-animation="fadeInDown" data-delay="500ms">Salon de Belleza</h2>
-                                    <a href="Salon-belleza" class="btn roberto-btn btn-2" data-animation="fadeInDown" data-delay="800ms">Ver más</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>            
-        </div>
-    </section>-->
-    <!-- Welcome Area End -->
-
+<?php 
+    include("slide.php");
+ ?>
     <!-- About Us Area Start -->
     <section class="roberto-about-area section-padding-100-0" style="background-image: url('<?php echo $url; ?>vistas/img/pag1/bg-4.jpg');">
-        <!-- Hotel Search Form Area -->
-<!--        <div class="hotel-search-form-area">
-            <div class="container-fluid">
-                <div class="hotel-search-form">
-                    <form action="#" method="post">
-                        <div class="row justify-content-between align-items-end">
-                            <div class="col-6 col-md-2 col-lg-3">
-                                <label for="checkIn">Check In</label>
-                                <input type="date" class="form-control" id="checkIn" name="checkin-date">
-                            </div>
-                            <div class="col-6 col-md-2 col-lg-3">
-                                <label for="checkOut">Check Out</label>
-                                <input type="date" class="form-control" id="checkOut" name="checkout-date">
-                            </div>
-                            <div class="col-4 col-md-1">
-                                <label for="room">Room</label>
-                                <select name="room" id="room" class="form-control">
-                                    <option value="01">01</option>
-                                    <option value="02">02</option>
-                                    <option value="03">03</option>
-                                    <option value="04">04</option>
-                                    <option value="05">05</option>
-                                    <option value="06">06</option>
-                                </select>
-                            </div>
-                            <div class="col-4 col-md-1">
-                                <label for="adults">Adult</label>
-                                <select name="adults" id="adults" class="form-control">
-                                    <option value="01">01</option>
-                                    <option value="02">02</option>
-                                    <option value="03">03</option>
-                                    <option value="04">04</option>
-                                    <option value="05">05</option>
-                                    <option value="06">06</option>
-                                </select>
-                            </div>
-                            <div class="col-4 col-md-2 col-lg-1">
-                                <label for="children">Children</label>
-                                <select name="children" id="children" class="form-control">
-                                    <option value="01">01</option>
-                                    <option value="02">02</option>
-                                    <option value="03">03</option>
-                                    <option value="04">04</option>
-                                    <option value="05">05</option>
-                                    <option value="06">06</option>
-                                </select>
-                            </div>
-                            <div class="col-12 col-md-3">
-                                <button type="submit" class="form-control btn roberto-btn w-100">Check Availability</button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>-->
+
 
         <div class="container mt-100">
             <div class="row align-items-center">
@@ -144,13 +11,15 @@
                     <!-- Section Heading -->
                     <div class="section-heading wow fadeInUp" data-wow-delay="100ms">
                         <h6>Nosotros</h6>
-                        <h2>Bienvenido al<br>Salon Galy Spa</h2>
+                        <h2>Bienvenido a<br>Salon Galy Spa</h2>
                     </div>
                     <div class="about-us-content mb-100">
-                        <h5 class="wow fadeInUp" data-wow-delay="300ms"
-                        >Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. <br>
-                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
-                        </h5>
+                    <h5 class="wow fadeInUp" data-wow-delay="300ms">
+                        <strong></strong>
+Somos un Salón-Spa dedicado a mejorar y mantener la belleza del rostro, cabello y cuerpo buscando la unificación del concepto belleza-salud, mediante productos de alta calidad en combinación con aparatología de última generación y lo último en técnicas manuales lo que hacen de GALY SPA un espacio único de bienestar, donde la imagen toma punto clave para lograr el éxito tanto personal como profesional, ya que una buena imagen detona belleza, armonía y Salud. <br>
+Contamos con personal altamente capacitado para cubrir cada una de las necesidades de nuestros clientes, sustentados en valores como: Ética, honestidad, respeto y servicio, lo que hacen de GALY SPA un centro único donde la estética integral es nuestro mayor compromiso
+
+                    </h5>
                         <!--<p class="wow fadeInUp" data-wow-delay="400ms">Manager: <span>Michen Taylor</span></p>-->
                         <!--<img src="</?php echo $url; ?>vistas/img/core-img/signature.png" alt="" class="wow fadeInUp" data-wow-delay="500ms">-->
                     </div>
@@ -177,6 +46,7 @@
                 </div>
             </div>
         </div>
+
     <!-- Service Area Start -->
     <div class="roberto-service-area">
         <div class="container">
@@ -184,27 +54,39 @@
                 <div class="col-12">
                     <div class="service-content d-flex align-items-center justify-content-between">
                         <!-- Single Service Area -->
-                        <div class="single-service--area mb-100 wow fadeInUp" data-wow-delay="100ms">
+                        
+                        <div class="single-service--area mb-100 wow fadeInUp" data-wow-delay="100ms" >
+                            <a href="Tratamientos-Faciales" title="">
                             <img src="<?php echo $url; ?>vistas/img/pag1/icon-3.png" alt="">
-                            <h5>Tratamientos Faciales</h5>
+                            <h5>Faciales</h5>
+                            </a>
                         </div>
 
                         <!-- Single Service Area -->
+                        
                         <div class="single-service--area mb-100 wow fadeInUp" data-wow-delay="300ms">
-                            <img src="<?php echo $url; ?>vistas/img/pag1/icon-2.png" alt="">
+                            <a href="Masajes" title="">
+                            <img src="<?php echo $url; ?>vistas/img/pag1/icon-2.png" alt=""  >
                             <h5>Masajes</h5>
+                            </a>
                         </div>
 
                         <!-- Single Service Area -->
+                       
                         <div class="single-service--area mb-100 wow fadeInUp" data-wow-delay="500ms">
-                            <img src="<?php echo $url; ?>vistas/img/pag1/icon-1.png" alt="">
-                            <h5>Salon de Belleza</h5>
+                             <a href="Salon-belleza" title="">
+                            <img src="<?php echo $url; ?>vistas/img/pag1/icon-1.png" alt=""  >
+                            <h5>Salon </h5>
+                            </a>
                         </div>
 
                         <!-- Single Service Area -->
+                       
                         <div class="single-service--area mb-100 wow fadeInUp" data-wow-delay="700ms">
-                            <img src="<?php echo $url; ?>vistas/img/pag1/icon-2.png" alt="">
-                            <h5>Tratamientos Corporales</h5>
+                             <a href="Tratamientos-Corporales" title="">
+                            <img src="<?php echo $url; ?>vistas/img/pag1/icon-2.png" alt=""  >
+                            <h5>Tratamientos </h5>
+                            </a>
                         </div>
 
                     </div>
@@ -212,103 +94,133 @@
             </div>
         </div>
     </div>
+    <!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">COTIZA</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="CERRAR">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js" type="text/javascript" charset="utf-8" async defer></script>
+    <div class="container">
+        <h2>Datos de contacto</h2>
+            <form name="frmContacto" method="post">
+            <fieldset class="form-group">
+
+                <div class="form-group">
+                    <label for="zipCode">C.P.</label>
+                    <input type="number" maxlength="5" id="zipCode" name="zipCode" class="form-control" placeholder="Tu Código  postal">
+                   
+                </div>
+
+                <div class="form-group">
+                    <label for="locationTxt">Colonia o Delegación</label>
+                    <input class="form-control" type="text" id="locationTxt" name="locationTxt" placeholder="Ingresa tu Colonia o Delegación">
+                </div>
+
+                <div class="form-group row">
+                    <div class="form-group col">
+                        <label for="first_name">Nombre:</label>
+                        <input class="form-control" type="text" id="firstName" name="first_name" placeholder="Ingresa tu nombre" >
+                    </div>
+
+                    <div class="form-group col">
+                        <label for="last_name">Apellido</label>
+                        <input class="form-control" type="text" id="last_name" name="last_name" placeholder="Ingresa tu apellido" >
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <div class="form-group col">
+                        <label for="email">E-mail</label>
+                        <input class="form-control" type="email" id="email" name="email" placeholder="Ingrese su email" value=" ">
+                     
+                    </div>
+
+                    <div class="form-group col">
+                        <label for="telephone">Celular</label>
+                        <input class="form-control" type="text" id="telephone" name="telephone" placeholder="Ingrese su numero de celular">
+                       
+                    </div>
+                </div>
+
+                
+<button type="submit" value="Enviar" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+  enviar
+</button>
+
+</form>
+
+
+
+<?php
+if(isset($_POST['email'])) {
+
+// Debes editar las próximas dos líneas de código de acuerdo con tus preferencias
+$email_to = "samm.arquitectura@hotmail.com";
+$email_subject = "Contacto desde el sitio web";
+
+
+// Aquí se deberían validar los datos ingresados por el usuario
+if(!isset($_POST['first_name']) ||
+!isset($_POST['last_name']) ||
+!isset($_POST['email']) ||
+!isset($_POST['telephone']) ||
+!isset($_POST['locationTxt']) ||
+!isset($_POST['zipCode'])) {
+
+
+echo "<script language='javascript'>";
+echo "alert('Ocurrió un error y el formulario no ha sido enviado')";
+echo "</script>"; 
+
+die();
+}
+
+$email_message = "Detalles del formulario de contacto:\n\n";
+
+$email_message .= "Nombre: " . $_POST['first_name'] . "\n";
+$email_message .= "Apellido: " . $_POST['last_name'] . "\n";
+$email_message .= "E-mail: " . $_POST['email'] . "\n";
+$email_message .= "Teléfono: " . $_POST['telephone'] . "\n";
+$email_message .= "Alcadia: " . $_POST['locationTxt'] . "\n";
+$email_message .= "CP: " . $_POST['zipCode'] . "\n\n";
+
+// Ahora se envía el e-mail usando la función mail() de PHP
+$headers = 'From: '.$email_from."\r\n".
+'Reply-To: '.$email_from."\r\n" .
+'X-Mailer: PHP/' . phpversion();
+@mail($email_to, $email_subject, $email_message, $headers);
+
+
+echo "<script language='javascript'>";
+echo "alert('El correo se ha enviado exitosamente')";
+echo "</script>"; 
+
+
+}
+?>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">CERRAR</button>
+      </div>
+    </div>
+  </div>
+</div>
     <!-- Service Area End -->
     </section>
     <!-- About Us Area End -->
-
-    <!-- Testimonials Area Start -->
-<!--    <section class="roberto-testimonials-area section-padding-100-0">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-12 col-md-6">
-                    <div class="testimonial-thumbnail owl-carousel mb-100">
-                        <img src="<?php echo $url; ?>vistas/img/bg-img/10.jpg" alt="">
-                        <img src="<?php echo $url; ?>vistas/img/bg-img/11.jpg" alt="">
-                    </div>
-                </div>
-
-                <div class="col-12 col-md-6">
-                    <!~~ Section Heading ~~>
-                    <div class="section-heading">
-                        <h6>Testimonials</h6>
-                        <h2>Our Guests Love Us</h2>
-                    </div>
-                    <!~~ Testimonial Slide ~~>
-                    <div class="testimonial-slides owl-carousel mb-100">
-
-                        <!~~ Single Testimonial Slide ~~>
-                        <div class="single-testimonial-slide">
-                            <h5>“This can be achieved by applying search engine optimization or popularly known as SEO. This is a marketing strategy which increases the quality and quantity of traffic flow to a particular website via search engines.”</h5>
-                            <div class="rating-title">
-                                <div class="rating">
-                                    <i class="icon_star"></i>
-                                    <i class="icon_star"></i>
-                                    <i class="icon_star"></i>
-                                    <i class="icon_star"></i>
-                                    <i class="icon_star"></i>
-                                </div>
-                                <h6>Robert Downey <span>- CEO Deercreative</span></h6>
-                            </div>
-                        </div>
-
-                        <!~~ Single Testimonial Slide ~~>
-                        <div class="single-testimonial-slide">
-                            <h5>“Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus delectus facilis molestias, error vitae praesentium quos eaque qui ea, tempore blanditiis sint reprehenderit, quaerat. Commodi ab architecto sit suscipit exercitationem!”</h5>
-                            <div class="rating-title">
-                                <div class="rating">
-                                    <i class="icon_star"></i>
-                                    <i class="icon_star"></i>
-                                    <i class="icon_star"></i>
-                                    <i class="icon_star"></i>
-                                    <i class="icon_star"></i>
-                                </div>
-                                <h6>Akash Downey <span>- CEO Deercreative</span></h6>
-                            </div>
-                        </div>
-
-                        <!~~ Single Testimonial Slide ~~>
-                        <div class="single-testimonial-slide">
-                            <h5>“Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor, ex quos. Alias a rem maiores, possimus dicta sit distinctio quis iusto!”</h5>
-                            <div class="rating-title">
-                                <div class="rating">
-                                    <i class="icon_star"></i>
-                                    <i class="icon_star"></i>
-                                    <i class="icon_star"></i>
-                                    <i class="icon_star"></i>
-                                    <i class="icon_star"></i>
-                                </div>
-                                <h6>Downey Sarah <span>- CEO Deercreative</span></h6>
-                            </div>
-                        </div>
-
-                        <!~~ Single Testimonial Slide ~~>
-                        <div class="single-testimonial-slide">
-                            <h5>“Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore sequi laboriosam fugit suscipit aspernatur, minima minus voluptatum, id ab atque similique ex earum. Magni.”</h5>
-                            <div class="rating-title">
-                                <div class="rating">
-                                    <i class="icon_star"></i>
-                                    <i class="icon_star"></i>
-                                    <i class="icon_star"></i>
-                                    <i class="icon_star"></i>
-                                    <i class="icon_star"></i>
-                                </div>
-                                <h6>Robert Brown <span>- CEO Deercreative</span></h6>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>-->
-    <!-- Testimonials Area End -->
 
     <!-- Projects Area Start -->
     <section class="roberto-project-area">
         <!-- Projects Slide -->
         <div class="projects-slides owl-carousel">
             <!-- Single Project Slide -->
-            <div class="single-project-slide active bg-img" style="background-image: url(<?php echo $url; ?>vistas/img/HD/facial2.jpg);">
+            <div class="single-project-slide active bg-img" style="background-image: url('<?php echo $url; ?>vistas/img/HD/facial2.jpg');">
                 <!-- Project Text -->
                 <div class="project-content">
                     <div class="text">
@@ -328,7 +240,7 @@
             </div>
 
             <!-- Single Project Slide -->
-            <div class="single-project-slide bg-img" style="background-image: url(<?php echo $url; ?>vistas/img/HD/O6RXL30.jpg);">
+            <div class="single-project-slide bg-img" style="background-image: url('<?php echo $url; ?>vistas/img/HD/O6RXL30.jpg');">
                 <!-- Project Text -->
                 <div class="project-content">
                     <div class="text">
@@ -348,7 +260,7 @@
             </div>
 
             <!-- Single Project Slide -->
-            <div class="single-project-slide bg-img" style="background-image: url(<?php echo $url; ?>vistas/img/HD/salon5.jpg);">
+            <div class="single-project-slide bg-img" style="background-image: url('<?php echo $url; ?>vistas/img/HD/salon5.jpg');">
                 <!-- Project Text -->
                 <div class="project-content">
                     <div class="text">
@@ -368,7 +280,7 @@
             </div>
 
             <!-- Single Project Slide -->
-            <div class="single-project-slide bg-img" style="background-image: url(<?php echo $url; ?>vistas/img/HD/tc.jpg);">
+            <div class="single-project-slide bg-img" style="background-image: url('<?php echo $url; ?>vistas/img/HD/tc.jpg');">
                 <!-- Project Text -->
                 <div class="project-content">
                     <div class="text">
@@ -388,7 +300,7 @@
             </div>
 
             <!-- Single Project Slide -->
-            <div class="single-project-slide bg-img" style="background-image: url(<?php echo $url; ?>vistas/img/HD/mani2.jpg);">
+            <div class="single-project-slide bg-img" style="background-image: url('<?php echo $url; ?>vistas/img/HD/mani2.jpg');">
                 <!-- Project Text -->
                 <div class="project-content">
                     <div class="text">
@@ -407,11 +319,21 @@
                 </div>
             </div>
         </div>
+
     </section>
     <!-- Projects Area End -->
+<?php 
 
+        
+        $conexion = conexion($bd_config);
+        // Obtenemos los post
+        $posts = obtener_post($blog_config['post_por_pagina'], $conexion);
+        $posts2 = obtener_post($blog_config2['post_por_pagina2'], $conexion);
+
+
+ ?>
     <!-- Blog Area Start -->
-    <section class="roberto-blog-area section-padding-100-0">
+    <section class="roberto-blog-area section-padding-100-0" id="blog" style="background-image: url('<?php echo $url;?>vistas/img/HD/bg-services.jpg');">
         <div class="container">
             <div class="row">
                 <!-- Section Heading -->
@@ -426,11 +348,15 @@
             <div class="row">
                 <!-- Single Post Area -->
                 <?php foreach($posts as $post): ?>
+
                 <div class="col-12 col-md-6 col-lg-4">
                     <div class="single-post-area mb-100 wow fadeInUp" data-wow-delay="300ms">
-                       
+                      
                         <a class="post-thumbnail" href="<?php echo $urlServidor; ?>single.php?id=<?php echo $post['id']; ?>">
+
+                            <img src="<?php echo $url; ?>vistas/img/core-img/logo-galy.png" alt=""  style="position: absolute;top:0%;width: 15%;opacity: 0.5">
                             <img src="<?php echo $urlServidor; ?>imagenes/<?php echo $post['thumb']; ?>" alt="<?php echo $post['titulo'] ?>">
+
                         </a>
                         <!-- Post Meta -->
                         <div class="post-meta">
@@ -438,11 +364,14 @@
                             <a href="#" class="post-catagory"></a>
                         </div>
                         <!-- Post Title -->
-                        <a class="post-title" href="single.php?id=<?php echo $post['id']; ?>"><?php echo $post['titulo'] ?></a>
-                        <p class="extracto"><?php echo $post['extracto'] ?></p>
+                        <a class="post-title" href="single.php?id=<?php echo $post['id']; ?>"><strong><?php echo $post['titulo'] ?></strong></a>
+                        <p class="extracto"><strong><?php echo $post['extracto'] ?></strong>
+                             <div class="fb-share-button" data-href="<?php echo $urlServidor; ?>single.php?id=<?php echo $post['id']; ?>" data-layout="button" data-size="large"></div>
+                        </p>
                         <a href="<?php echo $urlServidor; ?>single.php?id=<?php echo $post['id']; ?>" class="btn continue-btn">
                             <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
                         </a>
+                       
                     </div>
                 </div>
                 <?php endforeach; ?>          
@@ -459,7 +388,7 @@
                     <?php if (pagina_actual() === 1): ?>
                         <li class="disabled">&laquo;</li>
                     <?php else: ?>
-                        <li><a href="index.php?p=<?php echo pagina_actual() - 1?>">&laquo;</a></li>
+                        <li><a href="index.php?p=<?php echo pagina_actual() - 1?>#blog">&laquo;</a></li>
                     <?php endif; ?>
 
                     <!-- Creamos un elemento li por cada pagina que tengamos -->
@@ -471,7 +400,7 @@
                             </li>
                         <?php else: ?>
                             <li>
-                                <a href="index.php?p=<?php echo $i?>"><?php echo $i; ?></a>
+                                <a href="index.php?p=<?php echo $i?>#blog"><?php echo $i; ?></a>
                             </li>
                         <?php endif; ?>
                     <?php endfor; ?>
@@ -480,7 +409,7 @@
                     <?php if (pagina_actual() == $numero_paginas): ?>
                         <li class="disabled">&raquo;</li>
                     <?php else: ?>
-                        <li><a href="index.php?p=<?php echo pagina_actual() + 1; ?>">&raquo;</a></li>
+                        <li><a href="index.php?p=<?php echo pagina_actual() + 1; ?>#blog">&raquo;</a></li>
                     <?php endif; ?>
                 </ul>
             </section>

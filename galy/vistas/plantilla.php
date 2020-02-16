@@ -33,16 +33,20 @@
 		$url = Ruta::ctrRuta();
     	$urlServidor = Ruta::ctrRutaServidor();
 
-		require 'admin/config.php';
-		require 'functions.php';
+
+		require "../admin/admin/config.php";
+		include "functions.php";
+
 		$conexion = conexion($bd_config);
-		// Obtenemos los post
-		// 
+				// Obtenemos los post
 		$posts = obtener_post($blog_config['post_por_pagina'], $conexion);
 		$posts2 = obtener_post($blog_config2['post_por_pagina2'], $conexion);
 
 
+
 	?>
+		
+
 
 	<link rel="stylesheet" href="<?php echo $url; ?>vistas/css/animate.css">
 	<link rel="stylesheet" href="<?php echo $url; ?>vistas/css/bootstrap-datepicker.min.css">
@@ -52,7 +56,6 @@
 	<link rel="stylesheet" href="<?php echo $url; ?>vistas/css/flexslider.css">
 	<link rel="stylesheet" href="<?php echo $url; ?>vistas/css/font-awesome.min.css">
 	<link rel="stylesheet" href="<?php echo $url; ?>vistas/css/icomoon.css">
-	<link rel="stylesheet" href="<?php echo $url; ?>vistas/css/jquery-ui.min.css">
 	<link rel="stylesheet" href="<?php echo $url; ?>vistas/css/jquery-ui.min.css">	
 	<link rel="stylesheet" href="<?php echo $url; ?>vistas/css/magnific-popup.css">
 	<link rel="stylesheet" href="<?php echo $url; ?>vistas/css/nice-select.css">
@@ -61,13 +64,26 @@
 	<link rel="stylesheet" href="<?php echo $url; ?>vistas/style.css">
 	<link rel="stylesheet" href="<?php echo $url; ?>vistas/gulpfile.js">
 	<link rel="stylesheet" href="<?php echo $url; ?>vistas/css/paginacion.css">
-
 	<link rel="stylesheet" href="<?php echo $url; ?>vistas/css/main.css">	
 	<link rel="stylesheet" href="<?php echo $url; ?>vistas/css/util.css">
+	<link rel="stylesheet" href="<?php echo $url; ?>vistas/css/afterbef.css">
 
+	<link rel="stylesheet" href="<?php echo $url; ?>vistas/css/fonts/ElegantIcons.eot">
+	<link rel="stylesheet" href="<?php echo $url; ?>vistas/css/fonts/ElegantIcons.svg">
+	<link rel="stylesheet" href="<?php echo $url; ?>vistas/css/fonts/ElegantIcons.ttf">
+	<link rel="stylesheet" href="<?php echo $url; ?>vistas/css/fonts/ElegantIcons.woff">
 </head>
 
 
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-157713203-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-157713203-1');
+</script>
 
 <?php
 
@@ -94,14 +110,14 @@ if(isset($_GET["ruta"])){
 	LISTA BLANCA DE URL'S AMIGABLES
 	=============================================*/
 
-	if($rutas[0] == "index" || $rutas[0] == "blog" || $rutas[0] == "single-blog" || $rutas[0] == "contacto" || $rutas[0] == "nosotros" || $rutas[0] == "servicios" || $rutas[0] == "login"){
+	if($rutas[0] == "index" || $rutas[0] == "blog" || $rutas[0] == "single-blog" || $rutas[0] == "contacto" || $rutas[0] == "nosotros" || $rutas[0] == "servicios" || $rutas[0] == "login" || $rutas[0] == "Instalaciones"){
 
 		include "modulos/".$rutas[0].".php";
 
 	}
 
 
-	elseif ($rutas[0] == "Tratamientos-Faciales" || $rutas[0] == "Tratamientos-Corporales" || $rutas[0] == "Salon-belleza" || $rutas[0] == "Masajes" || $rutas[0] == "Manicura-Pedicura") {
+	elseif ($rutas[0] == "Tratamientos-Faciales" || $rutas[0] == "Tratamientos-Corporales" || $rutas[0] == "Salon-belleza" || $rutas[0] == "Masajes" || $rutas[0] == "Manicura-Pedicura" || $rutas[0] == "cuarto-spa2" || $rutas[0] == "salon-360" || $rutas[0] == "cuarto-spa1" || $rutas[0] == "cuarto-spa3") {
 		include "modulos/servicios/".$rutas[0].".php";
 	}
 
@@ -113,13 +129,32 @@ if(isset($_GET["ruta"])){
 	}
 
 }else{
-	include "modulos/slide.php";
+	
 	include "modulos/inicio.php";
 
 }
 	include "modulos/footer.php";
 ?>
 
+
+    <!-- Load Facebook SDK for JavaScript -->
+<div id="fb-root"></div>
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      xfbml            : true,
+      version          : 'v3.2'
+    });
+  };
+
+  (function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/es_LA/sdk/xfbml.customerchat.js';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+</script>
 
 <!--=====================================
 BOTON FLOTANTE
@@ -130,7 +165,7 @@ BOTON FLOTANTE
     (function () {
         var options = {
             facebook: "1959701580752883", // Facebook page ID
-            whatsapp: "+52 1 55 44 32 01 16", // WhatsApp number
+            whatsapp: "+52 1 55 22 40 65 79", // WhatsApp number
             email: "salongalyspa@gmail.com", // Email
             sms: "5544320116", // Sms phone number
             call: "5544320116", // Call phone number
@@ -172,6 +207,7 @@ JAVASCRIPT PERSONALIZADO
     <script src="<?php echo $url; ?>vistas/js/main.js"></script>
 
     <script src="<?php echo $url; ?>vistas/js/map-custom.js"></script>
+
 
 
 </body>

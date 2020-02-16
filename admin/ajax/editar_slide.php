@@ -3,7 +3,7 @@
 
 if($_SERVER['REQUEST_METHOD'] == "POST" && isset($_POST["titulo"])){
 	/* Llamar la Cadena de Conexion*/ 
-	include ("../config/conexion.php");
+	include ("../admin/config.php");
 	// escaping, additionally removing everything that could be (html/javascript-) code
      $titulo = mysqli_real_escape_string($con,(strip_tags($_POST['titulo'], ENT_QUOTES)));
 	 $descripcion = mysqli_real_escape_string($con,(strip_tags($_POST['descripcion'], ENT_QUOTES)));

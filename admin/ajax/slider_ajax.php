@@ -1,6 +1,6 @@
 <?php
 /* Llamar la Cadena de Conexion*/ 
-include ("../config/conexion.php");
+include ("../admin/config.php");
 
 $action = (isset($_REQUEST['action'])&& $_REQUEST['action'] !=NULL)?$_REQUEST['action']:'';
 if($action == 'ajax'){

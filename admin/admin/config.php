@@ -1,7 +1,10 @@
 <?php
-
+define('front', 'http://localhost/galy-spa/galy/');
+define('ver', 'http://localhost/galy-spa/admin/');
 define('RUTA', 'http://localhost/galy-spa/admin/');
-//define('RUTA', 'https://eago.com.mx/blog/');
+
+define('estilos', 'http://localhost/galy-spa/galy/vistas/');
+define('link', 'http://localhost/galy-spa/galy/');
 
 //DB TRABJANDO EN LOCALHOST
 $bd_config = array(
@@ -13,19 +16,38 @@ $bd_config = array(
 //DB TRABJANDO EN EL SERVIDOR
 //
 //$bd_config = array(
-	//'basedatos' => 'blog-eago',
-	//'usuario' => 'user-blog',
-	//'pass' => 'Blog123.'
+	//'basedatos' => 'salongalyspa',
+	//'usuario' => 'Galyspa',
+	//'pass' => 'Codage2020.'
 //);
 
 $blog_config = array(
-	'post_por_pagina'=> '6',
+	'post_por_pagina'=> '3',
 	'carpeta_imagenes' => 'imagenes/'
 );
+
+$blog_config2 = array(
+	'post_por_pagina2'=> '12',
+);
+
 
 $blog_admin = array(
 	'usuario' => 'Galyspa',
 	'password' => 'Codage2020'
 );
+////Conexionn blog con el Admin
 
+$DB_HOST="localhost";//Servidor donde se encuentra alojada nuestra base de datos
+$DB_NAME= "salongalyspa";// Nombre de la base de datos
+$DB_USER= "root";//Usuario de la base de datos
+$DB_PASS= "";//Contraseña del usuario de la base de datos
+	# conectare la base de datos
+    $con=@mysqli_connect($DB_HOST, $DB_USER, $DB_PASS, $DB_NAME);
+    if(!$con){
+        die("imposible conectarse: ".mysqli_error($con));
+    }
+    if (@mysqli_connect_errno()) {
+        die("Connect failed: ".mysqli_connect_errno()." : ". mysqli_connect_error());
+    }
+    //Conexion Db slide frontend
 ?>

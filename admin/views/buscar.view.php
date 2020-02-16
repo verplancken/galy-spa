@@ -1,7 +1,13 @@
-<?php 
-    define('estilos', 'http://localhost/galy-spa/galy/vistas/');
-    define('link', 'http://localhost/galy-spa/galy/');
- ?>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="" />
+    <meta name="keywords" content="salon de belleza, Tratamientos Faciales, Masajes, Tratamientos Corporales, Manicura y Pedicura, Salon de belleza, salon , galy , galy spa" />
+    <meta name="author" content="" />
+  <!-- Facebook and Twitter integration -->
+    <meta property="og:title" content="salon de belleza | Tratamientos Faciales | Masajes | Tratamientos Corporales | Manicura y Pedicura | Salon de belleza"/>
+    <meta property="og:image" content=""/>
+    <meta property="og:url" content="http://salongalyspa.com.mx/vistas/img/core-img/logo-galy.png"/>
+    <meta property="og:site_name" content="Salon Galy Spa<"/>
+    <meta property="og:description" content=""/>
 
     <link rel="stylesheet" href="<?php echo estilos ?>css/animate.css">
     <link rel="stylesheet" href="<?php echo estilos ?>css/bootstrap-datepicker.min.css">
@@ -21,7 +27,14 @@
     <link rel="stylesheet" href="<?php echo estilos ?>gulpfile.js">
     <link rel="stylesheet" href="<?php echo estilos ?>css/paginacion.css">
 
-
+  <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
 
      <!-- Header Area Start -->
     <header class="header-area">
@@ -147,6 +160,7 @@
                         <!-- Post Thumbnail -->
                         <div class="post-thumbnail">
                         <a href="single.php?id=<?php echo $post['id']; ?>">
+                            <img src="../galy/vistas/img/core-img/logo-galy.png" alt=""  style="position: absolute;top:0%;width: 15%;opacity: 0.5">
                             <img src="imagenes/<?php echo $post['thumb']; ?>" alt="<?php echo $post['titulo'] ?>">
                         </a>
                         </div>
@@ -206,7 +220,7 @@
                     <div class="roberto-sidebar-area pl-md-4">
 
                         <!-- Newsletter -->
-                        <div class="single-widget-area mb-100">
+<!--                        <div class="single-widget-area mb-100">
                             <div class="newsletter-form">
                                 <h5>Boletin informativo</h5>
                                 <p>Suscríbase a nuestro boletín de noticias y reciba nuevas actualizaciones.</p>
@@ -216,7 +230,7 @@
                                     <button type="submit" class="btn roberto-btn w-100">Subscribirse</button>
                                 </form>
                             </div>
-                        </div>
+                        </div>-->
 
                     </div>
                 </div>

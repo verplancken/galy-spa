@@ -1,7 +1,7 @@
 <?php
 if($_SERVER['REQUEST_METHOD'] == "POST" && isset($_FILES["fileToUpload"]["type"])){
 /* Llamar la Cadena de Conexion*/ 
-include ("../config/conexion.php");
+include ("../admin/config.php");
 
 $id_slide=intval($_POST['id']);
 $target_dir = "../img/slider/";

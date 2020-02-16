@@ -8,59 +8,99 @@
 
 
 <url>
-  <loc>http://salongalyspa.com.mx/</loc>
-  <lastmod>2020-01-27T00:44:15+00:00</lastmod>
+  <loc>https://salongalyspa.com.mx/galy/</loc>
+  <lastmod>2020-02-04T05:35:50+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>http://salongalyspa.com.mx/index.php</loc>
-  <lastmod>2020-01-27T00:44:15+00:00</lastmod>
+  <loc>https://salongalyspa.com.mx/galy/index.php</loc>
+  <lastmod>2020-02-04T05:35:50+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://salongalyspa.com.mx/servicios</loc>
-  <lastmod>2020-01-27T00:44:15+00:00</lastmod>
+  <loc>https://salongalyspa.com.mx/galy/servicios</loc>
+  <lastmod>2020-02-04T05:35:50+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://salongalyspa.com.mx/nosotros</loc>
-  <lastmod>2020-01-27T00:44:15+00:00</lastmod>
+  <loc>https://salongalyspa.com.mx/galy/nosotros</loc>
+  <lastmod>2020-02-04T05:35:50+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://salongalyspa.com.mx/blog</loc>
-  <lastmod>2020-01-27T00:44:15+00:00</lastmod>
+  <loc>https://salongalyspa.com.mx/galy/blog</loc>
+  <lastmod>2020-02-04T05:35:50+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://salongalyspa.com.mx/contacto</loc>
-  <lastmod>2020-01-27T00:44:15+00:00</lastmod>
+  <loc>https://salongalyspa.com.mx/galy/contacto</loc>
+  <lastmod>2020-02-04T05:35:50+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://salongalyspa.com.mx/Tratamientos-Faciales</loc>
-  <lastmod>2020-01-27T00:44:15+00:00</lastmod>
+  <loc>https://salongalyspa.com.mx/galy/login</loc>
+  <lastmod>2020-02-04T05:35:50+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://salongalyspa.com.mx/Masajes</loc>
-  <lastmod>2020-01-27T00:44:15+00:00</lastmod>
+  <loc>https://salongalyspa.com.mx/galy/Tratamientos-Faciales</loc>
+  <lastmod>2020-02-04T05:35:50+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://salongalyspa.com.mx/Tratamientos-Corporales</loc>
-  <lastmod>2020-01-27T00:44:15+00:00</lastmod>
+  <loc>https://salongalyspa.com.mx/galy/Masajes</loc>
+  <lastmod>2020-02-04T05:35:50+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://salongalyspa.com.mx/Salon-belleza</loc>
-  <lastmod>2020-01-27T00:44:15+00:00</lastmod>
+  <loc>https://salongalyspa.com.mx/galy/Salon-belleza</loc>
+  <lastmod>2020-02-04T05:35:50+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://salongalyspa.com.mx/Manicura-Pedicura</loc>
-  <lastmod>2020-01-27T00:44:15+00:00</lastmod>
+  <loc>https://salongalyspa.com.mx/galy/Tratamientos-Corporales</loc>
+  <lastmod>2020-02-04T05:35:50+00:00</lastmod>
   <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://salongalyspa.com.mx/galy/Manicura-Pedicura</loc>
+  <lastmod>2020-02-04T05:35:50+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://salongalyspa.com.mx/admin/single.php?id=2</loc>
+  <lastmod>2020-02-04T05:35:50+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://salongalyspa.com.mx/admin/single.php?id=3</loc>
+  <lastmod>2020-02-04T05:35:50+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://salongalyspa.com.mx/admin/single.php?id=8</loc>
+  <lastmod>2020-02-04T05:35:50+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://salongalyspa.com.mx/galy/index.php?p=2</loc>
+  <lastmod>2020-02-04T05:35:50+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://salongalyspa.com.mx/admin/single.php?id=9</loc>
+  <lastmod>2020-02-04T05:35:50+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://salongalyspa.com.mx/galy/blog?p=2</loc>
+  <lastmod>2020-02-04T05:35:50+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://salongalyspa.com.mx/galy/index.php?p=1</loc>
+  <lastmod>2020-02-04T05:35:50+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 
 
