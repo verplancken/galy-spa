@@ -16,6 +16,7 @@
       <ul class="nav navbar-nav">
         <li class="active"><a href="admin/index.php">Noticias <span class="sr-only">(current)</span></a></li>
         <li><a href="sliderslist.php">Carrusel</a></li>
+        <li><a href="servicios-ad.php">Antes y Despues</a></li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->

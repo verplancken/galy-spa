@@ -143,25 +143,71 @@
         </div>
     </section>
     <!-- Our Room Area End -->  
+<?php
+// Archivo de conexion con la base de datos
+
+// Condicional para validar el borrado de la imagen
+if(isset($_GET['delete_id']))
+{
+  // Selecciona imagen a borrar
+  $stmt_select = $DB_con->prepare('SELECT Imagen_Img FROM tbl_imagenes WHERE Imagen_ID =:uid');
+  $stmt_select->execute(array(':uid'=>$_GET['delete_id']));
+  $imgRow=$stmt_select->fetch(PDO::FETCH_ASSOC);
+  // Ruta de la imagen
+  unlink("imagenes/".$imgRow['Imagen_Img']);
+  
+  // Consulta para eliminar el registro de la base de datos
+  $stmt_delete = $DB_con->prepare('DELETE FROM tbl_imagenes WHERE Imagen_ID =:uid');
+  $stmt_delete->bindParam(':uid',$_GET['delete_id']);
+  $stmt_delete->execute();
+  // Redireccioa al inicio
+  header("Location: index.php");
+}
+
+?>
+
 
 
 <div class="container-afbef text-center">
+    <?php
+  
+  $stmt = $DB_con->prepare('SELECT Imagen_ID, Imagen_Marca, Imagen_Tipo, Imagen_Img, Imagen_Img2 FROM tbl_imagenes ORDER BY Imagen_ID DESC');
+  $stmt->execute();
+  
+  if($stmt->rowCount() > 0){
+    while($row=$stmt->fetch(PDO::FETCH_ASSOC)){
+      extract($row);
+      ?>
+
  <div class="inner">
-   <h1 class="p-2">Image Comparison Slider</h1>
-   <h3>A cool way to show diferences between two image, using CSS3 and jQuery.</h3>
+   <h1 class="p-2"><?php echo $Imagen_Marca; ?></h1>
+   <h3><?php echo $Imagen_Tipo; ?></h3>
    <div class="comparison-slider-wrapper">
     <!-- Comparison Slider - this div contain the slider with the individual images captions -->
     <div class="comparison-slider">
-     <img class="afterbf" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/751678/marioPhoto-2.jpg" alt="marioPhoto 2" style="max-width: 1000%;">
+     <img class="afterbf" src="<?php echo $url; ?>vistas/imagenes/<?php echo $row['Imagen_Img']; ?>" alt="<?php echo $row['Imagen_Img']; ?>" style="max-width: 1000%;">
      <!-- Div containing the image layed out on top from the left -->
      <div class="resize">
-      <img class="afterbf" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/751678/marioPhoto-1.jpg" alt="marioPhoto 1" style="max-width: 1000%;">
+      <img class="afterbf" src="<?php echo $url; ?>vistas/imagenes/<?php echo $row['Imagen_Img2']; ?>" alt="<?php echo $row['Imagen_Img']; ?>" style="max-width: 1000%;">
      </div>
      <!-- Divider where user will interact with the slider -->
      <div class="divider"></div>
     </div>
    </div>  
  </div>
+    <?php
+    }
+  }
+  else
+  {
+    ?>
+    <div class="col-xs-12">
+      <div class="alert alert-warning"> <span class="glyphicon glyphicon-info-sign"></span> &nbsp; Datos no encontrados ... </div>
+    </div>
+    <?php
+  }
+  
+?>
 </div>
 
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>

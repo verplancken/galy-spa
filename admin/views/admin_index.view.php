@@ -21,6 +21,9 @@ require '../views/estilos.php';
       <li class="nav-item">
         <a class="nav-link" href="../sliderslist.php">Carrusel</a>
       </li>
+      <li class="nav-item">
+        <a class="nav-link" href="../servicios-ad.php">Antes y Despues</a>
+      </li>
     </ul>
   </div>
 </nav>
