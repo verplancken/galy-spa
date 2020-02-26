@@ -36,7 +36,7 @@ if(isset($_GET['delete_id'])){
 	$stmt_delete->bindParam(':uid',$_GET['delete_id']);
 	$stmt_delete->execute();
 	// Redireccioa al inicio
-	header("Location: antes-despues.php");
+	header("Location: faciales-ab.php");
 }
 
 ?>

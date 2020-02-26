@@ -58,13 +58,13 @@ $active="active";
 			$valid_extensions2 = array('jpeg', 'jpg', 'png', 'gif'); // valid extensions
 		
 			// rename uploading image
-			$userpic = rand(1000,1000000).".".$imgExt;
-			$userpic2 = rand(1000,1000000).".".$imgExt2;
+			$userpic = rand(10000,10000000).".".$imgExt;
+			$userpic2 = rand(10000,10000000).".".$imgExt2;
 				
 			// allow valid image file formats
 			if(in_array($imgExt, $valid_extensions)){			
 				// Check file size '1MB'
-				if($imgSize < 1000000){
+				if($imgSize < 10000000){
 					move_uploaded_file($tmp_dir,$upload_dir.$userpic);
 				}
 				else{
@@ -77,7 +77,7 @@ $active="active";
 			// allow valid image file formats
 			if(in_array($imgExt2, $valid_extensions2)){			
 				// Check file size '1MB'
-				if($imgSize2 < 1000000)				{
+				if($imgSize2 < 10000000)				{
 					move_uploaded_file($tmp_dir2,$upload_dir2.$userpic2);
 				}
 				else{
